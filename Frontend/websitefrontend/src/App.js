@@ -1,20 +1,30 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-
+import {BrowserRouter as Router, Route, Routes, Switch} from 'react-router-dom';
+import HomePage from "./Pages/Home";
+import NavBar from "./Component/NavBar";
+import './index.css';
+import Contact from "./Pages/Contact";
+import About from "./Pages/About";
+import Projects from "./Pages/Projects";
+import Skills from "./Pages/Skills";
 function App() {
-  return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-      </Switch>
-    </Router>
-  );
+    return (
+        <Router>
+            <div style={{display: 'flex'}}>
+                <NavBar />
+                <div style={{flexGrow: 1}}>
+                    <Routes>
+                        <Route path="/" element={<HomePage />} />
+                        <Route path="/contact" element={<Contact/>}/>
+                        <Route path="/about" element={<About />} />
+                        <Route path="/projects" element={<Projects />} />
+                        <Route path="/skills" element={<Skills />} />
+                    </Routes>
+                </div>
+            </div>
+        </Router>
+    );
 }
+
 
 export default App;

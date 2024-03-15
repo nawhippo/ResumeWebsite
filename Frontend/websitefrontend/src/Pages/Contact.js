@@ -1,34 +1,36 @@
 import React from 'react';
-import axios from 'axios';
-
+import {FaGithub, FaLinkedin} from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
 function Contact() {
- const [Contact, setContact] = useState([]);
- const [loading, setLoading] = useState(true);
 
-   useEffect(() => {
-     //define the URL for your API endpoint
-     const Url = 'https://api.example.com/Contact';
+    const big = {
+        fontSize: "50px",
+        marginRight: "30px",
+        color: "#FFA500"
+    };
 
-     //make an HTTP GET request using Axios
-     axios.get(Url)
-       .then(response => {
-         setData(response.data);
-         setLoading(false);
-       })
-       .catch(error => {
-         console.error('Error fetching data:', error);
-         setLoading(false);
-       });
-   }, []);
+    const iconContainerStyle = {
+    transform:"translateX(12.5px)"
+    };
 
-
-  return (
-
-    <div>
-      {/* Your component content goes here */}
-    </div>
-  );
+    return (
+        <div style={{ textAlign: 'center', marginTop: '50px' }}>
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out through any of the following platforms.</p>
+            <div style={iconContainerStyle}>
+                <a href="https://www.linkedin.com/in/nathan-whippo-802326221/"  style={big}>
+                    <FaLinkedin />
+                </a>
+                <a  href="mailto:nathan.whippo@gmail.com"  style={big}>
+                    <MdEmail />
+                </a>
+                <a href="https://github.com/nawhippo" style={big}>
+                    <FaGithub />
+                </a>
+            </div>
+        </div>
+    );
 }
 
-export default MyComponent;
+export default Contact;
