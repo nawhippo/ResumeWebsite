@@ -3,6 +3,7 @@ import { Container, Card, Button } from 'react-bootstrap';
 import instrumentSuiteImage from '../Image/InstrumentSuite.png';
 import natebookImage from '../Image/Natebook.png';
 import pillscannerImage from '../Image/Pillscanner.png';
+import {FaGithub} from "react-icons/fa";
 
 
 function Projects() {
@@ -18,7 +19,9 @@ function Projects() {
                 "Built chord constructor with a fretboard generator based on instrument tuning."
             ],
             imageUrl: instrumentSuiteImage,
-            projectLink: "https://instrumentsuite-frontend.onrender.com/"
+            projectLink: "https://instrumentsuite-frontend.onrender.com/",
+            githubBackend: "https://github.com/nawhippo/InstrumentSuiteBackend",
+            githubFrontend: "https://github.com/nawhippo/InstrumentSuiteFrontend"
         },
         {
             title: "Summer Camp Medication Distribution Application",
@@ -31,7 +34,9 @@ function Projects() {
                 "Introduced a detailed medication information portal, inclusive of a flexible prescription management module."
             ],
             imageUrl: pillscannerImage,
-            projectLink: "https://pillscannerfrontend.onrender.com/"
+            projectLink: "https://pillscannerfrontend.onrender.com/",
+            githubBackend: "https://github.com/nawhippo/PillScanner",
+            githubFrontend: "https://github.com/nawhippo/PillScannerFrontend"
         },
         {
             title: "Social Media Application",
@@ -45,7 +50,8 @@ function Projects() {
                 "Integrated a sophisticated image management system with photo compression capabilities."
             ],
             imageUrl: natebookImage,
-            projectLink: "https://natebookfrontend.onrender.com"
+            projectLink: "https://natebookfrontend.onrender.com",
+            githubBackend: "https://github.com/nawhippo/WebsiteProject"
         },
         {
             title: "Fitness Application Group Project",
@@ -58,7 +64,7 @@ function Projects() {
                 "Adopted Agile development practices, working in two-week sprints for continuous improvement and timely delivery in a team setting.",
                 "Documented development process with design documents, progress reports, testing plans, and code documentation."
             ],
-            projectLink: "https://github.com/HIMANSHIKUSHWAHA/SE-GROUP-16"
+            githubBackend: "https://github.com/HIMANSHIKUSHWAHA/SE-GROUP-16",
         },
 ];
 
@@ -67,7 +73,7 @@ function Projects() {
             <h1 className="text-center mt-5">Projects</h1>
             {projectData.map((project, index) => (
                 <Card className="mb-5 card-custom" key={index}>
-                    {project.imageUrl && <Card.Img variant="top" src={project.imageUrl} alt={project.title} style={{maxWidth:"200px", maxHeight:"200px", width: "auto", height:"auto"}}/>}
+                    {project.imageUrl && <Card.Img variant="top" src={project.imageUrl} alt={project.title} style={{ maxWidth: "200px", maxHeight: "200px", width: "auto", height: "auto" }} />}
                     <Card.Body>
                         <Card.Title>{project.title}</Card.Title>
                         <Card.Text><strong>Period:</strong> {project.period}</Card.Text>
@@ -75,7 +81,17 @@ function Projects() {
                         {project.features.map((feature, featureIndex) => (
                             <Card.Text key={featureIndex}>- {feature}</Card.Text>
                         ))}
-                        <Button variant="primary" href={project.projectLink}>Learn More</Button>
+                        <Button variant="primary" href={project.projectLink} className="me-2">Visit Site</Button>
+                        {project.githubFrontend && (
+                            <a href={project.githubFrontend} className="me-2" title="GitHub Frontend" style={{ color: "#FFA500", fontSize: "20px" }}>
+                                <FaGithub /> Frontend
+                            </a>
+                        )}
+                        {project.githubBackend && (
+                            <a href={project.githubBackend} title="GitHub Backend" style={{ color: "#FFA500", fontSize: "20px" }}>
+                                <FaGithub /> Backend
+                            </a>
+                        )}
                     </Card.Body>
                 </Card>
             ))}
