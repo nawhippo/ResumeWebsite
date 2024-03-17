@@ -1,9 +1,11 @@
 import React from 'react';
-import {Container} from "react-bootstrap";
+import {Container, Row} from "react-bootstrap";
+import waving from "../Image/waving.png";
 
 function About() {
     return (
-        <Container className="mt-5">
+        <Container className="mt-5" style={{paddingLeft: '160px'}}>
+            <Row>
         <div style={{ textAlign: 'center'}}>
             <h1>About Me</h1>
             <p>
@@ -16,7 +18,10 @@ function About() {
                 To learn more about my hands-on experience and the projects I've worked on, please visit my projects page
             </p>
         </div>
+            </Row>
+            <img src={waving} alt="candid" style={{ height: "600px", paddingLeft: "400px" }}/>
         </Container>
+
     );
 }
 

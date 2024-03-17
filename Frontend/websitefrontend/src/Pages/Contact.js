@@ -1,7 +1,7 @@
 import React from 'react';
 import {FaGithub, FaLinkedin} from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
-
+import franticPhone from '../Image/franticPhone.png';
 function Contact() {
 
     const big = {
@@ -10,15 +10,13 @@ function Contact() {
         color: "#FFA500"
     };
 
-    const iconContainerStyle = {
-    transform:"translateX(12.5px)"
-    };
+
 
     return (
-        <div style={{ textAlign: 'center', marginTop: '50px' }}>
+        <div style={{ textAlign: 'center', marginTop: '50px', paddingLeft: '160px' }}>
             <h1>Contact Me</h1>
             <p>Feel free to reach out through any of the following platforms.</p>
-            <div style={iconContainerStyle}>
+            <div>
                 <a href="https://www.linkedin.com/in/nathan-whippo-802326221/"  style={big}>
                     <FaLinkedin />
                 </a>
@@ -29,6 +27,7 @@ function Contact() {
                     <FaGithub />
                 </a>
             </div>
+            <img src={franticPhone} alt="phone" style={{height: "500px"}} />
         </div>
     );
 }

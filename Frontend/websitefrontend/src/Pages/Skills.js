@@ -1,8 +1,9 @@
 import React from 'react';
-import {Container} from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
+import barbell from '../Image/barbell.png';
 
 const Skills = () => {
-    // Skills data structure
+
     const skills = {
         programmingLanguages: [
             "Java 🍵", "React ⚛️", "Node.js 🟩", "Javascript 📜", "Python 🐍", "C #️⃣", "HTML 🏗️", "CSS 🎨", "R 📊", "Racket 🚀"
@@ -21,6 +22,8 @@ const Skills = () => {
 
     return (
         <Container className="mt-5">
+            <Row>
+            <Col>
             <h1>Skills 💪</h1>
             <div>
                 <h3>Programming Languages 💻</h3>
@@ -38,6 +41,11 @@ const Skills = () => {
                 <h3>Software Skills 🛠️</h3>
                 <ul>{renderSkillsList(skills.softwareSkills)}</ul>
             </div>
+            </Col>
+            <Col>
+                <img src={barbell} alt="candid" style={{ height: "500px" }}/>
+            </Col>
+            </Row>
         </Container>
     );
 };

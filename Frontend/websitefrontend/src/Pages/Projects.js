@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Card, Button } from 'react-bootstrap';
+import {Container, Card, Button, Row, Col} from 'react-bootstrap';
 import instrumentSuiteImage from '../Image/InstrumentSuite.png';
 import natebookImage from '../Image/Natebook.png';
 import pillscannerImage from '../Image/Pillscanner.png';
@@ -69,8 +69,8 @@ function Projects() {
 ];
 
     return (
-        <Container fluid className="mt-4" style={{ maxHeight: '90vh', overflowY: 'scroll' }}>
-            <h1 className="text-center mt-5">Projects</h1>
+        <Container fluid className="mt-4" style={{ maxHeight: '90vh', overflowY: 'scroll', paddingLeft: '160px' }}>
+            <h1 className="text-center">Projects</h1>
             {projectData.map((project, index) => (
                 <Card className="mb-5 card-custom" key={index}>
                     {project.imageUrl && <Card.Img variant="top" src={project.imageUrl} alt={project.title} style={{ maxWidth: "200px", maxHeight: "200px", width: "auto", height: "auto" }} />}
@@ -81,17 +81,25 @@ function Projects() {
                         {project.features.map((feature, featureIndex) => (
                             <Card.Text key={featureIndex}>- {feature}</Card.Text>
                         ))}
+                        <Row>
+                            <Col>
                         <Button variant="primary" href={project.projectLink} className="me-2">Visit Site</Button>
+                            </Col>
+                            <Col>
                         {project.githubFrontend && (
-                            <a href={project.githubFrontend} className="me-2" title="GitHub Frontend" style={{ color: "#FFA500", fontSize: "20px" }}>
+                            <a href={project.githubFrontend} className="me-2" title="GitHub Frontend" style={{ color: "#FFA500", fontSize: "20px", textDecoration:"none"  }}>
                                 <FaGithub /> Frontend
                             </a>
                         )}
+                            </Col>
+                            <Col>
                         {project.githubBackend && (
-                            <a href={project.githubBackend} title="GitHub Backend" style={{ color: "#FFA500", fontSize: "20px" }}>
+                            <a href={project.githubBackend} title="GitHub Backend" style={{ color: "#FFA500", fontSize: "20px", textDecoration:"none" }}>
                                 <FaGithub /> Backend
                             </a>
                         )}
+                            </Col>
+                        </Row>
                     </Card.Body>
                 </Card>
             ))}

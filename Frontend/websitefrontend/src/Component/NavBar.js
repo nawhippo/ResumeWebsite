@@ -6,14 +6,20 @@ const NavBar = () => {
 
     const navbarStyle = {
         backgroundColor: '#FFA500',
-        color: '#4169E1'
+        color: '#4169E1',
+        minWidth: '150px',
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        height: '100vh',
+        zIndex: 1020,
     };
 
-
     const navLinkStyle = {
-        color: '#4169E1', // Royal Blue for links
+        color: '#4169E1',
         textTransform: 'uppercase',
-        marginTop: '4rem'
+        marginTop: '4rem',
+        fontWeight: 'bold'
     };
 
     return (

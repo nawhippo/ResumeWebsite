@@ -21,7 +21,6 @@ a:hover, a:focus {
 
 button {
   background-color: #FFA500 !important;
-  color: #FFFFFF !important;
   border: none !important;
   padding: 10px 20px !important;
   font-size: 1rem !important;
@@ -51,7 +50,10 @@ code {
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   border-color: #2B3C6E !important;
-  color: #FFFFFF !important;
+  transform: scale(1.15) !important;
+}
+
+.a:hover {
   transform: scale(1.15) !important;
 }
 
@@ -68,4 +70,24 @@ code {
 
 .card-custom .card-body {
   color: #FFA500;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.slide-down-animation {
+  animation: slideDown 0.5s forwards;
+}
+
+body * {
+  animation: slideDown 0.5s forwards;
 }
