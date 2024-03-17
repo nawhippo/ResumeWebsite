@@ -11,7 +11,7 @@ const Skills = () => {
         databases: ["PostgreSQL 🐘", "SQL 💾"],
         platforms: ["Linux 🐧", "Windows 🪟"],
         softwareSkills: [
-            "Spring Boot 🍃", "Git 🔧", "Agile Development 🏃‍♂️", "Jira 📋",
+            "Spring (Security, Data JPA, Spring Boot) 🍃", "Git 🔧", "Agile Development 🏃‍♂️", "Jira 📋",
             "Microsoft Excel 📊", "Microsoft Access 🔑", "Docker 🐳", "Bootstrap 👢"
         ]
     };
