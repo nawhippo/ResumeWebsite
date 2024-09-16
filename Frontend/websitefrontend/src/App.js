@@ -10,9 +10,9 @@ import Skills from "./Pages/Skills";
 function App() {
     return (
         <Router>
-            <div style={{display: 'flex'}}>
+            <div style={{display: 'flex', flexDirection: 'column'}}>
                 <NavBar />
-                <div style={{flexGrow: 1}}>
+                <div>
                     <Routes>
                         <Route path="/" element={<HomePage />} />
                         <Route path="/contact" element={<Contact/>}/>

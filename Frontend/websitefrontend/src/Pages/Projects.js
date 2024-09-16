@@ -69,7 +69,7 @@ function Projects() {
 ];
 
     return (
-        <Container fluid className="mt-4" style={{ maxHeight: '90vh', overflowY: 'scroll', paddingLeft: '160px' }}>
+        <Container fluid className="mt-4" style={{ maxHeight: '90vh', maxWidth:'150vh'}}>
             <h1 className="text-center">Projects</h1>
             {projectData.map((project, index) => (
                 <Card className="mb-5 card-custom" key={index}>

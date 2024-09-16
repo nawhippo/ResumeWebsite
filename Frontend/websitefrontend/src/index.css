@@ -1,16 +1,16 @@
 body {
   margin: 0 !important;
   padding: 0 !important;
-  color: #FFA500 !important;
-  background: #4169E1 !important;
-  font-family: 'Courier New', Courier, monospace !important;
+  background: linear-gradient(to right, rgb(73, 15, 73), #121212);
+  color: #ffffffb2 !important;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
   transition: background-color 0.3s ease !important;
 }
 
 a {
-  color: #FFA500;
+  color: palevioletred;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -43,8 +43,8 @@ code {
 }
 
 .btn-primary {
-  background-color: #FFA500 !important;
-  border-color: #36497E !important;
+  background-color: orange !important;
+  border-color: black !important;
   color: #5072A7 !important;
 }
 
@@ -55,12 +55,6 @@ code {
 
 .a:hover {
   transform: scale(1.15) !important;
-}
-
-.btn-primary:active, .btn-primary.active {
-  background-color: #2B3C6E !important;
-  border-color: #2B3C6E !important;
-  box-shadow: none !important;
 }
 
 .card-custom {

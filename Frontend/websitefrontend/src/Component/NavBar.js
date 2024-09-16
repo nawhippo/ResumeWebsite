@@ -5,29 +5,29 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
 
     const navbarStyle = {
-        backgroundColor: '#FFA500',
-        color: '#4169E1',
+        backgroundColor: '#121212',
+        color: 'ffffffb2',
         minWidth: '150px',
-        position: 'fixed',
         top: 0,
         left: 0,
-        height: '100vh',
         zIndex: 1020,
     };
 
     const navLinkStyle = {
-        color: '#4169E1',
+        color: 'white',
         textTransform: 'uppercase',
-        marginTop: '4rem',
+        marginTop: '2rem',
+        marginBottom: '2rem',
+        marginLeft: '15rem',
         fontWeight: 'bold'
     };
 
     return (
-        <Navbar expand="lg" style={navbarStyle}>
+        <Navbar style={navbarStyle}>
             <Container fluid>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="flex-column" style={{ height: "100vh" }}>
+                    <Nav className="flex-row" >
                         <Nav.Link as={Link} to="/" style={navLinkStyle}>Home</Nav.Link>
                         <Nav.Link as={Link} to="/about" style={navLinkStyle}>About Me</Nav.Link>
                         <Nav.Link as={Link} to="/projects" style={navLinkStyle}>My Projects</Nav.Link>

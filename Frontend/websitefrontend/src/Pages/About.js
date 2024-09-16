@@ -4,7 +4,7 @@ import waving from "../Image/waving.png";
 
 function About() {
     return (
-        <Container className="mt-5" style={{paddingLeft: '160px'}}>
+        <Container className="mt-5">
             <Row>
         <div style={{ textAlign: 'center'}}>
             <h1>About Me</h1>
