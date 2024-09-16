@@ -16,7 +16,8 @@ a {
 }
 
 a:hover, a:focus {
-  color: #FFD700;
+  color: hotpink !important;
+  transition: color 0.5s ease !important;
 }
 
 button {

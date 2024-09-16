@@ -6,7 +6,7 @@ const NavBar = () => {
 
     const navbarStyle = {
         backgroundColor: '#121212',
-        color: 'ffffffb2',
+        color: '#ffffffb2',
         minWidth: '150px',
         top: 0,
         left: 0,
@@ -14,7 +14,7 @@ const NavBar = () => {
     };
 
     const navLinkStyle = {
-        color: 'white',
+        color: '#ffffffb2',
         textTransform: 'uppercase',
         marginTop: '2rem',
         marginBottom: '2rem',

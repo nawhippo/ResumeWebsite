@@ -13,7 +13,7 @@ function Contact() {
 
 
     return (
-        <div style={{ textAlign: 'center', marginTop: '50px', paddingLeft: '160px' }}>
+        <div style={{ textAlign: 'center', marginTop: '50px'}}>
             <h1>Contact Me</h1>
             <p>Feel free to reach out through any of the following platforms.</p>
             <div>
