@@ -16,7 +16,7 @@ function Contact() {
         <div style={{ textAlign: 'center', marginTop: '50px'}}>
             <h1>Contact Me</h1>
             <p>Feel free to reach out through any of the following platforms.</p>
-            <div>
+            <div style={{marginLeft: '25px'}}>
                 <a href="https://www.linkedin.com/in/nathan-whippo-802326221/"  style={big}>
                     <FaLinkedin />
                 </a>

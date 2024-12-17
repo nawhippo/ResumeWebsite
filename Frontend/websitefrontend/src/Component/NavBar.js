@@ -10,7 +10,7 @@ const NavBar = () => {
         minWidth: '150px',
         top: 0,
         left: 0,
-        zIndex: 1020,
+        zIndex: 1020
     };
 
     const navLinkStyle = {

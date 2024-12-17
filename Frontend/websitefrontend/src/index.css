@@ -2,18 +2,22 @@ body {
   margin: 0 !important;
   padding: 0 !important;
   background: linear-gradient(to right, rgb(73, 15, 73), #121212);
-  color: #ffffffb2 !important;
+  color: #d4bfff !important;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
   transition: background-color 0.3s ease !important;
 }
 
+.text-center {
+  margin-bottom: 5%;
+}
 a {
-  color: palevioletred;
-  text-decoration: none;
+  color: #d4bfff !important; 
+  text-decoration: none !important;
   transition: color 0.3s ease;
 }
+
 
 a:hover, a:focus {
   color: hotpink !important;
@@ -21,18 +25,20 @@ a:hover, a:focus {
 }
 
 button {
-  background-color: #FFA500 !important;
+  background-color: #6a0dad;
   border: none !important;
   padding: 10px 20px !important;
   font-size: 1rem !important;
   cursor: pointer !important;
   border-radius: 5px !important;
-  transition: background-color 0.3s ease !important;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-  background-color: #FFD700 !important;
-  transform: scale(1.5) !important;
+  background-color: #9b30ff;
+  transform: scale(1.1);
 }
 
 code {
@@ -44,28 +50,42 @@ code {
 }
 
 .btn-primary {
-  background-color: orange !important;
-  border-color: black !important;
-  color: #5072A7 !important;
+  background-color: #d4bfff !important; /* Light Lavender */
+  border: 1px solid #555 !important; /* Subtle border */
+  color: #ffffff !important; /* White text for contrast */
+  border-radius: 5px !important;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  border-color: #2B3C6E !important;
-  transform: scale(1.15) !important;
-}
-
-.a:hover {
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  border-color: #9b7eff !important; /* Slightly darker lavender */
+  background-color: #9b7eff; /* Slight lavender effect on hover */
   transform: scale(1.15) !important;
 }
 
 .card-custom {
-  background-color: #5072A7 !important;
-  border: none !important;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+  box-shadow: rgb(119, 22, 230) 1px 5px 20px -5px;
+  color: #d4bfff;
+  padding: 7.5px;
+  font-size: 1.1rem;
+  background-image: linear-gradient(144deg,#9940ff, #5B42F3 50%, #1a022e);
 }
 
-.card-custom .card-body {
-  color: #FFA500;
+
+.card-body {
+  color: #d4bfff !important;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: 1px solid #555;
+  background: linear-gradient(to right, rgb(34, 32, 32), #121212);
 }
+
+
 
 @keyframes slideDown {
   from {

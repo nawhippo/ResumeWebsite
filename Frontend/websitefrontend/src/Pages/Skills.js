@@ -8,7 +8,7 @@ const Skills = () => {
         programmingLanguages: [
             "Java 🍵", "React ⚛️", "Node.js 🟩", "Javascript 📜", "Python 🐍", "C #️⃣", "HTML 🏗️", "CSS 🎨", "R 📊", "Racket 🚀"
         ],
-        databases: ["PostgreSQL 🐘", "SQL 💾"],
+        databases: ["PostgreSQL 🐘", "PL/SQL 💾"],
         platforms: ["Linux 🐧", "Windows 🪟"],
         softwareSkills: [
             "Spring (Security, Data JPA, Spring Boot) 🍃", "Git 🔧", "Agile Development 🏃‍♂️", "Jira 📋",
